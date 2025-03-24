@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 d-flex align-items-center">
+              <img src="https://images.vexels.com/media/users/3/137201/isolated/preview/83b5f2a86fa0ec9f938664da94a9bc55-logotipo-de-trazo-de-silueta-de-instagram.png" height="110px" width="110px">
+            </div>
+            <div class="col-3 d-flex align-items-center" >
+                <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label"><strong>Caption:</strong></label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                            <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-1 d-flex align-items-center">
+                <div class="btn-group">
+                    <button class="btn btn-secondary w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 d-flex justify-content-center gap-2">
+            <a class="btn btn-light" href="index.html">
+              <i class="fa-solid fa-table-cells"></i>
+            <a>
+            <a class="btn btn-light" href="index1.html">
+              <i class="fa-solid fa-stop"></i>
+            <a>
+          </div>
+        </div>
+
+        <div id="parentContainer">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="card border-success mb-3" style="max-width: 33rem;">
+                  <div class="card-header bg-transparent border-success"><strong>Landscape</strong></div>
+                  <div>
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top">
+                  </div>
+                  <div class="card-footer bg-transparent border-success"><strong>200 Like</strong><br> Examples of landscapes for the exercise.</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="card border-success mb-3" style="max-width: 33rem;">
+                  <div class="card-header bg-transparent border-success"><strong>Landscape 2</strong></div>
+                  <div>
+                    <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top">
+                  </div>
+                  <div class="card-footer bg-transparent border-success"><strong>201 Like</strong><br> Examples of landscapes for the exercise.</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="card border-success mb-3" style="max-width: 33rem;">
+                  <div class="card-header bg-transparent border-success"><strong>Landscape 3</strong></div>
+                  <div>
+                    <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top">
+                  </div>
+                  <div class="card-footer bg-transparent border-success"><strong>202 Like</strong><br> Examples of landscapes for the exercise.</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="card border-success mb-3" style="max-width: 33rem;">
+                  <div class="card-header bg-transparent border-success"><strong>Landscape 4</strong></div>
+                  <div>
+                    <img src="https://images.pexels.com/photos/1062249/pexels-photo-1062249.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top">
+                  </div>
+                  <div class="card-footer bg-transparent border-success"><strong>203 Like</strong><br> Examples of landscapes for the exercise.</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
